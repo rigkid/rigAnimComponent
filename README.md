@@ -1,5 +1,7 @@
 # rigAnimComponent
 
+![preview](examples/tween/preview.png)
+
 Tween, LFO, and binding PODs. 
 
 > Data only
