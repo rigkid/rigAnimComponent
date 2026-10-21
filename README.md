@@ -1,6 +1,6 @@
 # rigAnimComponent
 
-![preview](examples/tween/preview.png)
+![preview](examples/tween/img/preview.png)
 
 Tween, LFO, and binding PODs. 
 
