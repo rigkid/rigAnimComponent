@@ -18,6 +18,11 @@ add_library(${PACK_NAME} STATIC
 	src/CTween.h
 	src/CModLfo.h
 	src/CModBinding.h
+	src/CAnimSkeleton.h
+	src/CAnimBind.h
+	src/CAnimSkin.h
+	src/CAnimClip.h
+	src/CAnimTrack.h
 )
 target_link_libraries(${PACK_NAME} PUBLIC rigkit)
 if(TARGET rigComponent)

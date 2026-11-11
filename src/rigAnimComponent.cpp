@@ -3,6 +3,11 @@
 #include "core/RigKitEngine.h"
 #include "core/pack/PackRegistry.h"
 #include "ecs/MEcs.h"
+#include "CAnimBind.h"
+#include "CAnimClip.h"
+#include "CAnimSkeleton.h"
+#include "CAnimSkin.h"
+#include "CAnimTrack.h"
 #include "CModBinding.h"
 #include "CModLfo.h"
 #include "CTween.h"
@@ -31,6 +36,11 @@ void rigAnimComponent::setup() {
 	ecs->registerComponent<ecs::CModLfo>("ModLfo", true);
 	ecs->registerComponent<ecs::CModBinding>("ModBinding", true);
 	ecs->registerComponent<ecs::CTween>("Tween", true);
+	ecs->registerComponent<ecs::CAnimSkeleton>("AnimSkeleton", true);
+	ecs->registerComponent<ecs::CAnimBind>("AnimBind", true);
+	ecs->registerComponent<ecs::CAnimSkin>("AnimSkin", true);
+	ecs->registerComponent<ecs::CAnimClip>("AnimClip", true);
+	ecs->registerComponent<ecs::CAnimTrack>("AnimTrack", true);
 	spdlog::info("[rigAnimComponent] announced anim PODs");
 }
 
